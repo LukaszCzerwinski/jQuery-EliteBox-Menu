@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>jQuery EliteBox - Drop-Down Menu - Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+	<!-- jQuery library -->
+	<script type="text/javascript" src="assets/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/jquery.snippet.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/jquery.snippet.min.css" />
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("pre.htmlCode").snippet("html", {style:"acid"}); 
+
+		$("pre.styles").snippet("css",{style:"acid"}); 
+
+		$("pre.js").snippet("javascript",{style:"acid"}); 
+		});
+	</script>
+</head>
+
+
+<body>
+	<div class="container"> 
+		<h1 class="center">&ldquo;jQuery EliteBox Menu&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: September 23, 2014<br>
+					By: <a href="http://codecanyon.net/user/Lukasz_Czerwinski?ref=Lukasz_Czerwinski">Lukasz Czerwinski</a><br>
+					Email: <a href="mailto:luki2p@gmail.com">luki2p@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for download my item. I hope that you are happy to use it. If you have any questions that are beyond the scope of this help file or you need modify the script, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/Lukasz_Czerwinski?ref=Lukasz_Czerwinski">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr> 
+
+		<h2 id="toc" >Step by step.</h2>
+		<ol class="alpha">
+			<li><a href="#heads">HEAD Section</a></li>
+			<li><a href="#structure">EliteBox Menu Structure</a></li> 
+			<li><a href="#init">Init the EliteBox Menu</a></li> 
+		</ol>
+		
+		<hr>
+		
+		<h3 id="heads"><strong>A) HEAD Section</strong> - <a href="#toc">top</a></h3>
+		<p>The jQuery EliteBox - Drop-Down Menu must have the <strong>jQuery 1.7+</strong> library, the <strong>jQuery UI</strong> (with Effects Core) and init possibility to rensponsive.</p>
+<pre class="htmlCode">
+&lt;!-- enable RWD --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;!-- jQuery library --&gt;
+&lt;script type="text/javascript" src="js/jquery-1.11.1.min.js"&gt;&lt;/script&gt; 
+&lt;script type="text/javascript" src="js/jquery-ui.min.js"&gt;&lt;/script&gt; 
+
+</pre>
+	<p>Now, you must add all files of the <strong>jQuery EliteBox - Drop-Down Menu</strong> script to your site.</p>
+<pre class="htmlCode">
+&lt;!-- start EliteBoxMenu scripts --&gt;
+&lt;script type="text/javascript" src="js/script.js"&gt;&lt;/script&gt;  
+&lt;script type="text/javascript" src="js/eliteBoxMenu_min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="eliteBoxMenu.css" /&gt;
+&lt;!-- end EliteBoxMenu scripts --&gt;
+</pre> 
+		<ul>Where:
+			<li><strong>script.js</strong> - to init the jQuery plugin</li>
+			<li><strong>eliteBoxMenu_min.js</strong> (compressed) or <strong>eliteBoxMenu_Develop.ja</strong> (uncopressed) - the EliteBoxMenu plugin</li>
+			<li><strong>eliteBoxMenu.css</strong> - CSS with EliteBoxMenu style. You feel free to modify it.</li>
+		</ul>
+		<h3 id="structure"><strong>B) EliteBoxMenu Structure</strong> - <a href="#toc">top</a></h3>
+		<p>The EliteBoxMenu structure is very simple. First, you must create a <i>div</i> with <strong>eliteBoxMenu</strong> class. Inside the div push <code>&lt;ul&gt;</code> menu list, where each <code>&lt;li&gt;</code> will be have a link and submenus.  See the example code.</p>
+<pre class="htmlCode">
+&lt;!-- Drop-Down Menu STRUCTURE --&gt;
+&lt;div class="eliteBoxMenu"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#" data-image="pictures/card18.jpg" data-color="#d21573"&gt;&lt;span&gt;About Us&lt;/span&gt;&lt;span&gt;Bussiness&lt;/span&gt;&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#"&gt;Subitem 1&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;Subitem 2&lt;/a&gt;&lt;/li&gt; 
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#" data-image="pictures/book01.jpg" data-color="#d215d0"&gt;&lt;span&gt;Read the book&lt;/span&gt;&lt;span&gt;Bestseller&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+	&lt;/ul&gt; 
+&lt;/div&gt;
+&lt;!-- end Drop-Down Menu STRUCTURE --&gt; 
+
+</pre>
+	<ul>You can set the datas for item:
+		<li><strong>data-image</strong> - link to an image.</li>
+		<li><strong>data-color</strong> - color for item after Hover/Click it. You don't must set color for each item because you can set default color by plugin settings</li> 
+	</ul>
+		<h3 id="init"><strong>C) Init the EliteBox Menu</strong> - <a href="#toc">top</a></h3>
+		<p>In the finish, you must init the <strong>EliteBox Menu</strong> jQuery plugin and set propertises. Please open the <strong>script.js</strong> file where you can find the code</p>
+<pre class="js">
+jQuery(document).ready(function ($){ 
+  //Usage 
+  $(".EliteBoxMenu ul").EliteBoxMenu();
+}); 
+</pre>
+	<p>This is default usage with default settings of the <strong>EliteBox Menu</strong> plugin. See the default settings:</p>
+<pre class="js">
+Speed: 350,
+mainHeight: 60,
+mainWidth: 170,
+hoverColor: '#15b1d2',
+method: 'mouseenter',
+rwdFrom: 980			 
+</pre>
+	<ul>
+		<li><strong>Speed</strong> - speed of animations in miliseconds.</li>
+		<li><strong>mainHeight</strong> and <strong>mainWidth</strong> - size of main items, if you change the values please update it also in <strong>EliteBoxMenu.css</strong>.</li> 
+		<li><strong>hoverColor</strong> - default color for items hover if you don't set custom color in item attribute.</li>
+		<li><strong>method</strong> - method of use the menu - <strong>mouseenter</strong> or <strong>click</strong>. For mobile devices the method always is <strong>click</strong>.</li>
+		<li><strong>rwdFrom</strong> - set the width for Responsive Web Design. If you  change the property you must also update in CSS.</li>
+	</ul>
+	<h4>Example usage of custom settings.</h4>
+<pre class="js">
+jQuery(document).ready(function ($){ 
+  //Usage 
+  $(".eliteBoxMenu ul#secondMenu").eliteBoxMenu({
+  	method: 'click'
+  });
+}); 
+</pre>
+		<p class="append-bottom alt large"><strong>Lukasz Czerwinski</strong></p>
+		<p><a href="#toc">Go To Top</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

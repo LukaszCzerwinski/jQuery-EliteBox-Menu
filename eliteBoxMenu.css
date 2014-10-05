@@ -146,14 +146,14 @@
 		position: fixed;
 		width: auto;
 		top:50px;
-		left: -171px;
+		left: -188px;
 		margin: 0px;
 		z-index: 8999;
 	} 
 	.eliteBoxMenu ul {
-		width: 170px;
+		width: 188px;
 	}
-	.eliteBoxMenu ul.rwd li { 
+	.eliteBoxMenu ul.rwd li {  
 		border-right: none;
 		border-bottom: solid 1px #464646;
 		box-shadow: 0px 1px 1px #000000;

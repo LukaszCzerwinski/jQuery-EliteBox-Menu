@@ -1,3 +1,3 @@
 jQuery-EliteBox-Menu
 ====================
-Read more on http://luckyjquery.net
+Read more on luckyjquery.net

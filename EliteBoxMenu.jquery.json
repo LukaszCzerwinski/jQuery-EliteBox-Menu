@@ -1,0 +1,33 @@
+{
+  "name": "EliteBoxMenu",
+  "version": "1.0.0",
+  "title": "EliteBox Menu",
+  "description": "If do you need fresh menu for your project - see the EliteBox Drop-Down Menu jQuery plugin, maybe that is it. The EliteBox have to offer you high spectrum of possibilities.",
+  "keywords": [
+    "jquery",
+    "plugin", 
+      "menu",
+      "drop-down",
+      "images",
+      "pictures",
+      "responsive"
+  ],
+  "homepage": "http://luckyjquery.net/",
+  "author": {
+    "name": "Lukasz Czerwinski",
+    "url": "http://lukasz-design.pl/"
+  }, 
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/LukaszCzerwinski/jQuery-EliteBox-Menu/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7",
+    "jquery-ui": ">=1.11.1"
+  },
+  "docs": "https://github.com/LukaszCzerwinski/jQuery-EliteBox-Menu/blob/master/README.md",
+  "demo": "http://luckyjquery.net/examples.html",
+    "download": "https://github.com/LukaszCzerwinski/jQuery-EliteBox-Menu.git"
+}

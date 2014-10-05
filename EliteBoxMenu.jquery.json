@@ -28,6 +28,6 @@
     "jquery-ui": ">=1.11.1"
   },
   "docs": "https://github.com/LukaszCzerwinski/jQuery-EliteBox-Menu/blob/master/README.md",
-  "demo": "http://luckyjquery.net/examples.html",
+  "demo": "http://luckyjquery.net/example.html",
     "download": "https://github.com/LukaszCzerwinski/jQuery-EliteBox-Menu.git"
 }
